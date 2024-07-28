@@ -2,4 +2,12 @@
     <h1>
         My link shortener
     </h1>
+    <hr>
+    <ul>
+        {% for link in links %}
+        <li>
+            {{link.name}} | {{link.url}}
+        </li>
+        {%endfor%}
+    </ul>
     </html>
